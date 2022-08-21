@@ -1,3 +1,30 @@
-.contenedorMain{
-    background-color: violet;
+.footer{
+    background-color: rgb(85, 83, 83);
+    padding: 10px;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 5px;
+    color: rgb(211, 208, 203);
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li a{
+    margin: 0px 10px;
+    color: rgb(211, 208, 203);
+    text-decoration: none;
+}
+
+.footer h5{
+    text-align: center;
+    margin: 2px;
+    color: rgb(211, 208, 203);
 }

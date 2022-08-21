@@ -3,9 +3,9 @@ import style from './footer.module.css'
 
 const Footer = () => {
     return (
-        <footer className={style.contenedorMain}>
-            <h5>Laura María Döhle</h5>
-            <Navbar/>
+        <footer className={style.footer}>
+            <Navbar isHeader = {false}/>
+            <h5>Copyright by Laura María Döhle</h5>
         </footer>
     )
 }

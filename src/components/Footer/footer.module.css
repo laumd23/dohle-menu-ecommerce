@@ -1,7 +1,6 @@
 .footer{
     background-color: rgb(85, 83, 83);
     padding: 10px;
-    
 }
 .nav{
     display: flex;
@@ -10,6 +9,7 @@
     padding: 10px;
     padding-bottom: 5px;
     color: rgb(211, 208, 203);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .nav ul {
@@ -27,4 +27,5 @@
     text-align: center;
     margin: 2px;
     color: rgb(211, 208, 203);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

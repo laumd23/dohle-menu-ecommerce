@@ -1,7 +1,8 @@
 import React from 'react'
+import CartWidget from '../CartWidget/CartWidget'
+import Button from '../Button/Button'
 import style from './navbar.module.css'
 import styling from '../Footer/footer.module.css'
-import CartWidget from '../CartWidget/CartWidget'
 
 
 const Navbar = (props) => {
@@ -23,6 +24,7 @@ const Navbar = (props) => {
                         <a href="https://google.com">Contacto</a>
                     </li>                    
                 </ul>
+                <Button value='Sign in' variant='primary' />
                 <CartWidget/>
             </nav>
         );

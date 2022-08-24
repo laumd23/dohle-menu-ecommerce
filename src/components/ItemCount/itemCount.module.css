@@ -1,0 +1,25 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contador{
+    display: flex;
+    flex-direction: column;
+    padding: 5px; 
+}
+
+.agregarCarrito{
+    display: flex;
+}
+
+.bottonSumaResta{
+    display: flex;
+    align-items:center;
+    align-self: center;
+}

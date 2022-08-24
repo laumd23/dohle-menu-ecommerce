@@ -1,7 +1,11 @@
+.icono{
+    display:flex;
+    align-items: center;
+}
 .icono a{
     color: black;
     font-size: 36px;
 }
-.icono a span {
-    font-size: 36px;
+.icono span{
+    font-size: 18px;
 }

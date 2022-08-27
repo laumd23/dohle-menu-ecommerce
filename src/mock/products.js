@@ -21,11 +21,11 @@ const products = [
     },
     {
         id: 3,
-        title: 'Milla Jovovich, en 5to elemento, realismo blanco y negro',
+        title: 'El 5to elemento, realismo blanco y negro',
         price: 275,
         stock: 10,
         category: "Cuadros en papel",
-        img: "https://res.cloudinary.com/lauradohle/image/upload/v1661566624/img-reaperArt/mini-art7_fgr1hg.jpg",
+        img: "https://res.cloudinary.com/lauradohle/image/upload/v1661604548/img-reaperArt/mini-art7-2_svzmd2.jpg",
         carrito: <ItemCount/>
     },
 ];

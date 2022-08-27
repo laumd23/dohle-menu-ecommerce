@@ -14,9 +14,6 @@ const ItemCount = ({stock, initial, onAdd}) => {
 
   return (  
   <div className={style.container}>
-    <div>
-        <img src="https://res.cloudinary.com/lauradohle/image/upload/v1661344969/img-reaperArt/mini-art8_xiyj1m.jpg" alt="" />
-    </div>
     <div  className={style.contador}>
       <div className={style.bottonSumaResta}>
           <button onClick={restar}>-</button>

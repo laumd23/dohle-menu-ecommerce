@@ -1,0 +1,16 @@
+.fatherCard{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.card h3{
+    position: absolute;
+    text-align: center;
+}
+
+.card h4 {
+    text-align: center;
+    margin: 2px;
+    padding-top: 70px;
+}

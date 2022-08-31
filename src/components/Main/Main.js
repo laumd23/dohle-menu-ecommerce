@@ -1,15 +1,15 @@
 import React from 'react';
 import style from './main.module.css'
-//import logoReact from '../../img/logo512.png'
+import ItemListContainer from '../ItemListContainer/ItemListContainer'
+import ItemDetailContainer from '../ItemDatails/ItemDetailContainer';
 
-const Main = ({test, info}) => { 
+const Main = () => { 
 
   return (
     <main className={style.contenedorMain}>
-        <section className={style.frasePrincipal}>
-            <h1>"El arte habla donde las palabras son incapaces de explicar"</h1>
-            <h2>{info}</h2>
-            <h3>{test}</h3>  
+        <section>
+            <ItemListContainer saludo="Hola Bienvenidos a mi Galeria de Arte"/>
+            <ItemDetailContainer/>
         </section>
     </main>
   )

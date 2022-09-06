@@ -15,11 +15,13 @@
 .nav ul {
     list-style: none;
     display: flex;
+    width: 25%;
+    justify-content: space-around;
 }
 
-.nav ul li a{
-    margin: 0px 10px;
+.nav ul a{
     color: rgb(211, 208, 203);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
 }
 

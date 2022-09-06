@@ -1,31 +1,32 @@
-import React from 'react'
-import CartWidget from '../CartWidget/CartWidget'
-import Button from '../Button/Button'
-import style from './navbar.module.css'
-import styling from '../Footer/footer.module.css'
+import React from 'react';
+import CartWidget from '../CartWidget/CartWidget';
+import Button from '../Button/Button';
+import style from './navbar.module.css';
+import styling from '../Footer/footer.module.css';
+import {Link} from 'react-router-dom'
 
 
 const Navbar = (props) => {
     if(props.isHeader){
         return (
             <nav className={style.nav}>
-                <h1>Reaper Crew Art</h1>
+                <Link to="/" className={style.reaper}>Reaper Crew Art</Link>
+
                 <ul>
-                    <li>
-                        <a href="https://google.com">Inicio</a>
-                    </li>
-                     <li>
-                        <a href="https://google.com">Quien soy</a>
-                    </li>
-                    <li>
-                        <a href="https://google.com">Pinturas y Dibujos</a>
-                    </li>
-                    <li>
-                        <a href="https://google.com">Contacto</a>
-                    </li>                    
+                    <Link to="/category/pinturas">Pinturas</Link>
+                    
+                    <Link to="/category/dibujos">Dibujos</Link>
+                       
+                    <Link to="/category/quienSoy">Quien Soy</Link>
+                    
+                    <Link to="/category/contacto">Contacto</Link>           
                 </ul>
+
                 <Button value='Sign in' variant='primary' />
-                <CartWidget/>
+
+                <Link to="/cart">
+                    <CartWidget/>
+                </Link>
             </nav>
         );
     }else {
@@ -33,18 +34,9 @@ const Navbar = (props) => {
             <nav className={styling.nav}>
                 <h1>Reaper Crew Art</h1>
                 <ul>
-                    <li>
-                        <a href="https://google.com">Footer</a>
-                    </li>
-                    <li>
+                        <Link to = "/">Home</Link>
                         <a href="https://google.com">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="https://google.com">Facebook</a>
-                    </li>
-                    <li>
                         <a href="https://google.com">Contacto</a>
-                    </li>
                 </ul>
             </nav>
         )

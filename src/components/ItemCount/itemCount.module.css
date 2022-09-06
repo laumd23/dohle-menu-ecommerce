@@ -13,11 +13,42 @@
     align-items: center;
 }
 
-.agregarCarrito{
+.agregarCarrito button{
     display: flex;
+    border-radius: 8px;
+    padding: 8px 12px;
+    border: 2px solid purple;
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.agregarCarrito button:hover{
+    background-color:purple;
+    color: white;
 }
 
 .bottonSumaResta{
     display: flex;
     align-items:center;
+}
+
+.bottonSumaResta p {
+    padding: 4px;
+}
+
+.bottonSumaResta button{
+    border-radius: 8px;
+    padding: 4px 6px;
+    border: 2px solid purple;
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.bottonSumaResta button:hover{
+    background-color: purple;
+    color: white;
 }

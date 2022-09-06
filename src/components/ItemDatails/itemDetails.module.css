@@ -1,8 +1,19 @@
 .productDetail{
     display: flex;
+    padding: 5px;
 }
 
 .texto{
     padding-left: 4px;
     
+}
+
+.texto h5{
+    background-color: purple;
+    display: inline-block;
+    padding: 4px;
+    color: white;
+    border-radius: 8px;
+    font-style: italic;
+    font-weight: 100;
 }

@@ -2,17 +2,16 @@
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Main from './components/Main/Main'
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
 
-    const info = "Dibujos y Pinturas";
-
     return (
-        <>
+        <BrowserRouter>
             <Header />           
-            <Main test="Venta de Arte" info={info}/>
+            <Main/>
             <Footer /> 
-        </>
+        </BrowserRouter>
     )
 }; 
 

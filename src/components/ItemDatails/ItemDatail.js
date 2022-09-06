@@ -5,7 +5,7 @@ import style from '../ItemDatails/itemDetails.module.css'
 const ItemDatail = ({item}) => {
 
     const onAdd = (param) => {
-        console.log(param);
+        alert(param);
     };
 
   return (
@@ -15,6 +15,7 @@ const ItemDatail = ({item}) => {
             <h3>{item.title}</h3>
             <h3>€{item.price}.-</h3>
             <h4>{item.details}</h4>
+            <h5>#{item.category}</h5>
             <ItemCount stock={10} initial={1} onAdd={onAdd}/>
         </div>
     </div>

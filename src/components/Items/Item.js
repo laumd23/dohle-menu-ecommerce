@@ -1,21 +1,21 @@
 import React from 'react'
-import ItemCount from '../ItemCount/ItemCount';
 import style from './items.module.css'
+import {Link} from 'react-router-dom';
 
 const Item = ({product}) => {
-    
-    const onAdd = (param) => {
-        alert(param);
-    }
-    
-  return (
-    <div className={style.card}> 
-        <img src={product.img} alt="Imagenes pinturas y dibujos en venta"/>
-        <h3>{product.title}</h3> 
-        <h5>€ {product.price}.-</h5>
-        <div><ItemCount stock={10} initial={1} onAdd={onAdd}/></div>
-    </div>
-  )
+    return (
+      <div className={style.card}> 
+          <img src={product.img} alt={product.title}/>
+          <div className= {style.infoProd}>
+              <h3>{product.title}</h3> 
+              <h4>€ {product.price}.-</h4>
+              <h5>#{product.category}</h5>
+              <Link to={`/detail/${product.id}`}>
+                <button className={style.buttonDetail}>Ver detalles</button>
+              </Link>
+          </div>    
+      </div>
+    )
 }
 
 export default Item

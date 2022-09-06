@@ -8,9 +8,6 @@ import ItemList from '../Items/ItemList';
 const ItemListContainer = (props) => {
   
   const [items, setItems] = useState ([]);
-  
-  // const parametroURL=useParams()
-  // console.log (parametroURL.categoryId);
   const { categoryId } = useParams();
 
   useEffect(()=> {
@@ -21,16 +18,15 @@ const ItemListContainer = (props) => {
 
         setTimeout(()=>{ 
             resolve(prod);
-        }, 500);
+        }, 1000);
       });
   
       getProducts
-          .then((data)=>{ 
-              setItems(data);
-          })
-          .catch ((error)=> {
-            console.log(error);
-        });
+          .then((data)=>{setItems(data)})
+          .catch ((error)=> {console.log(error)});
+          return () => {
+            setItems([])
+          }
   }, [categoryId]);
 
   return (
@@ -38,12 +34,12 @@ const ItemListContainer = (props) => {
       <div className = {style.saludo}>
         {props.saludo}
       </div>
-      <div>
-        <ItemList items={items}/>
-      </div>
+      {
+       items.length ? <ItemList items={items}/> : <h2>Cargando...</h2>
+      }
     </>
   )
-}
+} 
 
 export default ItemListContainer
 

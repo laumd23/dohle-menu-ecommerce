@@ -9,11 +9,17 @@
 .nav ul {   
     list-style: none;
     display: flex;
+    width: 30%;
+    justify-content: space-around;
+    padding: 0px;
+}   
+
+.reaper{
+    font-size: 1.5em;
+    color: black;
 }
 
-.nav ul li a{
-    margin: 0px 10px;
-    color: black;
+a {
     text-decoration: none;
+    color: black;
 }
-    

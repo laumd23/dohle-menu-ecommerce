@@ -5,7 +5,7 @@ import {BsCartCheck} from "react-icons/bs"
 const CartWidget = () => {
   return (
     <div className={style.icono}>
-      <a href="https://google.com"><BsCartCheck size={30}/></a>
+      <BsCartCheck size={30}/>
       <span>0</span>
     </div>
     

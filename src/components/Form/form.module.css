@@ -1,0 +1,30 @@
+.divForm{
+    margin: 25px;
+}
+
+.divForm form div{
+    margin:8px;
+    
+}
+
+.buttonForm{
+    display: flex;
+    border-radius: 8px;
+    padding: 4px 6px;
+    border: 2px solid #181818;
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.buttonForm:hover{
+    background-color: #181818;
+    color: white;
+}
+
+.divButton{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}

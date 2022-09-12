@@ -1,0 +1,9 @@
+.divPpal div img{
+    width: 99px;
+    height: 123px;
+    padding-top: 4px;
+}
+
+.divPpal div button{
+    margin-bottom: 5px;
+}

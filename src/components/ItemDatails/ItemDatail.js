@@ -1,16 +1,21 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import ItemCount from '../ItemCount/ItemCount'
 import style from '../ItemDatails/itemDetails.module.css'
 import {Link} from 'react-router-dom'
+import { CartContext } from '../../context/CartContext';
 
 const ItemDatail = ({item}) => {
     const[cantidad, setCantidad] = useState(0);
+    const {cart, addToCart} = useContext(CartContext);
 
-    const onAdd = (param) => {
-        setCantidad(param);
+    const onAdd = (qtyItem) => {
+        setCantidad(qtyItem);
+        addToCart(item, qtyItem);
     };
 
+    console.log(cart);
+    
   return (
     <div className={style.productDetail} >
         <img src={item.img} alt={item.title} />

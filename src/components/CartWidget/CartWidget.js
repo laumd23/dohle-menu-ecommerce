@@ -7,7 +7,7 @@ const CartWidget = () => {
     <div className={style.icono}>
       <BsCartCheck size={30}/>
       <span>0</span>
-    </div>
+    </div> 
     
   )
 }

@@ -9,7 +9,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
   }
 
   const restar = () =>{
-     count > initial ? setCount(count - 1) : alert("Desea eliminar el producto del carrito?");
+     count > initial && setCount(count - 1);
   }
 
   return (  

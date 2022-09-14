@@ -32,8 +32,8 @@ const Navbar = (props) => {
                 <h1>Reaper Crew Art</h1>
                 <ul>
                         <Link to = "/">Home</Link>
-                        <a href="https://google.com">Instagram</a>
-                        <a href="https://google.com">Contacto</a>
+                        <a href="https://www.instagram.com/marianobaez.art/?hl=es">Instagram</a>
+                        <Link to="/contact">Contacto</Link>
                 </ul>
             </nav>
         )

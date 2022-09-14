@@ -1,8 +1,13 @@
 import React, {useState} from 'react'
+import { useEffect } from 'react';
 import style from '../ItemCount/itemCount.module.css'
 
-const ItemCount = ({stock, initial, onAdd}) => {
-  const [count, setCount] = useState(1); 
+const ItemCount = ({stock, onAdd, initial = 1}) => {
+  const [count, setCount] = useState(initial); 
+
+  useEffect(()=>{
+    setCount(initial)
+  }, [initial])
   
   const sumar = () =>{
     count < stock ? setCount(count + 1) : alert("Máximo stock");
@@ -17,8 +22,8 @@ const ItemCount = ({stock, initial, onAdd}) => {
     <div  className={style.contador}>
       <div className={style.bottonSumaResta}>
           <button onClick={restar}>-</button>
-          <p> {count} </p>
           <button onClick={sumar}>+</button>
+          <p>{count}</p>
       </div>
       <div className={style.agregarCarrito}>
         <button onClick= {()=>onAdd (count)} >Agregar al carrito</button>

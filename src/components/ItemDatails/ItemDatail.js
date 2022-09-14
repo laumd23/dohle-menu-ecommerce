@@ -7,15 +7,15 @@ import { CartContext } from '../../context/CartContext';
 
 const ItemDatail = ({item}) => {
     const[cantidad, setCantidad] = useState(0);
-    const {cart, addToCart} = useContext(CartContext);
+    const {addToCart, getProductQuantity} = useContext(CartContext);
 
     const onAdd = (qtyItem) => {
         setCantidad(qtyItem);
         addToCart(item, qtyItem);
     };
+  //variable que colocare en el initial para que me tome la cantidad de prod que hay en el carrito (si hay)
+  const quantity = getProductQuantity(item.id);
 
-    console.log(cart);
-    
   return (
     <div className={style.productDetail} >
         <img src={item.img} alt={item.title} />
@@ -26,7 +26,9 @@ const ItemDatail = ({item}) => {
             <h5>#{item.category}</h5>
           <div>
             {
-              cantidad === 0 ? <ItemCount stock={item.stock} initial={1} onAdd={onAdd}/> : <Link className={style.goCart}to="/cart">Ir al Carrito</Link>
+              cantidad === 0  
+              ? <ItemCount stock={item.stock} initial={quantity} onAdd={onAdd}/> 
+              : <Link className={style.goCart}to="/cart">Finalizar compra</Link>
             }
           </div>  
         </div>

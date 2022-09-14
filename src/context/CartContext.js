@@ -10,7 +10,6 @@ const CartProvider = ({children}) => {
     const addToCart = (item, qtyItem) =>{
         if (isInCart(item.id)) {
             sumarCantidad(item, qtyItem);
-
         } else {
             setCart([...cart, {...item, qtyItem}])
         }
@@ -27,7 +26,7 @@ const CartProvider = ({children}) => {
             if (prod.id === item.id) {
                 const productUpDate = {
                     ...prod,
-                    qtyItem: prod.qtyItem + qtyItem
+                    qtyItem: qtyItem,
                 }
                 return productUpDate
             } else {
@@ -49,11 +48,36 @@ const CartProvider = ({children}) => {
         setCart([])
     }
     
+    //mostrar cantidad que tiene el usuario en el carrito
+    const getProductQuantity = (id) => {
+        const product = cart.find ((prod) => prod.id ===id)
+        return product?.qtyItem;
+    }
+
+    //calcular el total precio del carrito
+    const totalPrice = () => {
+        let total = 0;
+        cart.forEach((prod) => {
+            total += prod.price * prod.qtyItem;
+        })
+        return total;
+    };
+
+    //calcular total unidad para cartwidget
+    const totalQuantity = () =>{
+        let totally = 0;
+        cart.forEach((prod) =>{
+            totally += prod.qtyItem;
+        });
+        return totally;
+    }
+
+
     return(
-        <CartContext.Provider value={{ cart, addToCart, clearCart, removeProd }}>
+        <CartContext.Provider value={{ cart, addToCart, clearCart, removeProd, getProductQuantity, totalPrice, totalQuantity }}>
             {children}
         </CartContext.Provider>
     )
 }
 
-export default CartProvider
+export default CartProvider    

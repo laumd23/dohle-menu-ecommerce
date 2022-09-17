@@ -2,9 +2,12 @@
     margin: 25px;
 }
 
+.divForm form{
+    text-align: center;
+}
+
 .divForm form div{
     margin:8px;
-    
 }
 
 .buttonForm{
@@ -28,3 +31,5 @@
     justify-content: center;
     padding-top: 5px;
 }
+
+

@@ -1,37 +1,35 @@
-import React, { useState, useEffect } from 'react'
-import products from '../../mock/products';
-import ItemDatail from './ItemDatail';
-import {useParams} from 'react-router-dom'
-import style from '../ItemDatails/itemDetails.module.css'
+import React, { useState, useEffect } from "react";
+//import products from "../../mock/products";
+import ItemDatail from "./ItemDatail";
+import { useParams } from "react-router-dom";
+import style from "../ItemDatails/itemDetails.module.css";
+import { dB } from "../../firebaseConfig";
+import { doc, getDoc, collection } from 'firebase/firestore';
 
 const ItemDetailContainer = () => {
+  const [item, setItem] = useState();
+  const { idProd } = useParams();
 
-    const [item, setItem] = useState();
+  useEffect(() => {
+    const itemCollection = collection(dB, 'products')
+    const ref = doc(itemCollection, idProd)
 
-    const { idProd } = useParams();
-    const idProdN = Number(idProd);
+    getDoc(ref)
+    .then((res)=>{
+        setItem({
+            id: res.id,
+            ...res.data()
+        })
+    })
 
-    useEffect(() => {
-        const getProduct = () =>
-            new Promise((res, rej) => {
-                const oneProduct = products.find((prod) => prod.id === idProdN);
-                const itDetail = idProdN ? oneProduct : products;
 
-                setTimeout(() => {res(itDetail)}, 1000);
-            });
+  }, [idProd]);
 
-        getProduct()
-            .then((data) => {setItem(data);})
-            .catch((error) => {console.log(error);});
-    }, [idProdN]);
-    
-    return (
-        <>
-            {
-                item ? <ItemDatail item={item}/> : <h2 className={style.h2}>Cargando...</h2>
-            }
-        </>
-    )
-}
+  return (
+    <>
+      {item ? (<ItemDatail item={item} />) : (<h2 className={style.h2}>Cargando...</h2>)}
+    </>
+  );
+};
 
-export default ItemDetailContainer
+export default ItemDetailContainer;

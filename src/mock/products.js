@@ -49,9 +49,27 @@ const products = [
         title: '"Lluvia de ranas"',
         details: "Dibujo a mano. Niño bajo lluvia de ranas. Técnica mixta, tinta china y acuarela. Hoja A4 (210 x 297 mm)",
         price: 100,
-        stock: 5,
+        stock: 2,
         category: "pinturas",
         img: "https://res.cloudinary.com/lauradohle/image/upload/v1663176126/img-reaperArt/mini-art18_xfmfdc.jpg",
+    },
+    {
+        id: 7,
+        title: '"La joven de la perla"',
+        details: "Oleo sobre lienzo. Representación del cuadro la jove de la perla de Johannes Vermeer",
+        price: 200,
+        stock: 1,
+        category: "oleos",
+        img: "https://res.cloudinary.com/lauradohle/image/upload/v1663251811/img-reaperArt/mini-art24_yeytcq.jpg",
+    },
+    {
+        id: 8,
+        title: '"Blanco y negro"',
+        details: "Oleo sobre lienzo. Elementos de uso cotidiano  de tiempos pasados",
+        price: 80,
+        stock: 2,
+        category: "oleos",
+        img: "https://res.cloudinary.com/lauradohle/image/upload/v1663251818/img-reaperArt/mini-art23_f36pnq.jpg",
     },
 ];
 

@@ -5,6 +5,7 @@ import ItemListContainer from '../ItemListContainer/ItemListContainer';
 import ItemDetailContainer from '../ItemDatails/ItemDetailContainer';
 import Cart from '../Cart/Cart'
 import Contact from '../Contact/Contact';
+import QuienSoy from '../QuienSoy/QuienSoy';
 
 const Main = () => { 
 
@@ -22,8 +23,11 @@ const Main = () => {
                 path='/detail/:idProd'
                 element={<ItemDetailContainer/>}
             />
-            <Route path="/contact" element={<Contact/>}/>
             
+            <Route path="/quienSoy" element= {<QuienSoy/>} />
+
+            <Route path="/contact" element={<Contact/>}/>
+
             <Route path="/cart" element={<Cart/>}/>
         </Routes>
     </main>

@@ -1,0 +1,23 @@
+.quienSoy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quienSoy h1{
+    text-align: center;
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.imgContainer img{
+    width: 270px;
+    height: 404px;
+}
+
+p {
+    text-align: justify;
+}

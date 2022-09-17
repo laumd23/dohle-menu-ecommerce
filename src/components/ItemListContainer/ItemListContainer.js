@@ -12,9 +12,9 @@ const ItemListContainer = (props) => {
 
   useEffect(()=> {
     const itemsCollection = collection (dB, "products");
-    const productsShow= !categoryId ? itemsCollection : query(itemsCollection, where("category", "==", categoryId))
+    const itemsToShow= !categoryId ? itemsCollection : query(itemsCollection, where("category", "==", categoryId))
     
-    getDocs(productsShow)
+    getDocs(itemsToShow)
       .then((resp)=>{
         const products = resp.docs.map((prod)=>{
           return {

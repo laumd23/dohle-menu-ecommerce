@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-//import products from "../../mock/products";
 import ItemDatail from "./ItemDatail";
 import { useParams } from "react-router-dom";
 import style from "../ItemDatails/itemDetails.module.css";
@@ -7,7 +6,7 @@ import { dB } from "../../firebaseConfig";
 import { doc, getDoc, collection } from 'firebase/firestore';
 
 const ItemDetailContainer = () => {
-  const [item, setItem] = useState();
+  const [item, setItem] = useState({});
   const { idProd } = useParams();
 
   useEffect(() => {
@@ -15,14 +14,12 @@ const ItemDetailContainer = () => {
     const ref = doc(itemCollection, idProd)
 
     getDoc(ref)
-    .then((res)=>{
+      .then((res) => {
         setItem({
-            id: res.id,
-            ...res.data()
+          id: res.id,
+          ...res.data()
         })
-    })
-
-
+      })
   }, [idProd]);
 
   return (

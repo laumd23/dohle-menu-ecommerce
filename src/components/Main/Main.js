@@ -4,32 +4,32 @@ import style from './main.module.css';
 import ItemListContainer from '../ItemListContainer/ItemListContainer';
 import ItemDetailContainer from '../ItemDatails/ItemDetailContainer';
 import Cart from '../Cart/Cart'
-import Contact from '../Contact/Contact';
 import QuienSoy from '../QuienSoy/QuienSoy';
+import Form from '../Form/Form';
 
-const Main = () => { 
+const Main = () => {
 
   return (
     <main className={style.contenedorMain}>
-        <Routes>
-            <Route path='/' 
-                  element={<ItemListContainer saludo="Hola Bienvenidos a mi Galeria de Arte"/>}
-            />
-            <Route 
-                path='/category/:categoryId' 
-                element={<ItemListContainer/>}
-            />
-            <Route 
-                path='/detail/:idProd'
-                element={<ItemDetailContainer/>}
-            />
-            
-            <Route path="/quienSoy" element= {<QuienSoy/>} />
+      <Routes>
+        <Route path='/'
+          element={<ItemListContainer saludo="Hola Bienvenidos a mi Galeria de Arte" />}
+        />
+        <Route
+          path='/category/:categoryId'
+          element={<ItemListContainer />}
+        />
+        <Route
+          path='/detail/:idProd'
+          element={<ItemDetailContainer />}
+        />
 
-            <Route path="/contact" element={<Contact/>}/>
+        <Route path="/quienSoy" element={<QuienSoy />} />
 
-            <Route path="/cart" element={<Cart/>}/>
-        </Routes>
+        <Route path="/cart" element={<Cart />} />
+
+        <Route path="/checkout" element={<Form />} />
+      </Routes>
     </main>
   )
 }

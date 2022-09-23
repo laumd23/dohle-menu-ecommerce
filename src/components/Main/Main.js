@@ -5,7 +5,7 @@ import ItemListContainer from '../ItemListContainer/ItemListContainer';
 import ItemDetailContainer from '../ItemDatails/ItemDetailContainer';
 import Cart from '../Cart/Cart'
 import QuienSoy from '../QuienSoy/QuienSoy';
-import Form from '../Form/Form';
+import Checkout from '../Checkout/Checkout';
 
 const Main = () => {
 
@@ -28,7 +28,7 @@ const Main = () => {
 
         <Route path="/cart" element={<Cart />} />
 
-        <Route path="/checkout" element={<Form />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </main>
   )

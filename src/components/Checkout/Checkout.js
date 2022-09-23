@@ -7,7 +7,6 @@ import style from '../Cart/cart.module.css'
 const Checkout = () => {
   const { cart, clearCart, totalPrice } = useContext(CartContext);
   const total = totalPrice();
-  console.log(cart);
 
   const [idBuy, setIdBuy] = useState('');
   const handleId = (id) => {
@@ -15,9 +14,14 @@ const Checkout = () => {
   }
 
   if (idBuy) {
-    return <h2>Gracias por su compra!!! Su número de transacción es ${idBuy}</h2>
+    return (
+      <div>
+        <img src="https://res.cloudinary.com/lauradohle/image/upload/v1663157938/img-reaperArt/mini-logo_kztvei.png" alt="Logo Reaper Crew" />
+        <h2>Gracias por su compra!!! Su número de transacción es ${idBuy}</h2>
+      </div>
+    )
   }
-  
+
   return (
     <div className={style.order}>
       <p>Orden de Compra</p>

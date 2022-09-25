@@ -27,4 +27,6 @@ He intentado cumplir con cada paso indicado logrando así una app completa, orga
 He trabajado desde VSC. Para levantar la aplicación y trabajar en ella he hecho un `npm install` en la carpeta del proyecto, y a posterori un `npm start`.
 Fui subiendo el proyecto a un repositorio de github, trabajando en branches para un mayor orden y control de lo realizado.
 
-```https://github.com/laumd23/venta-arte-DohleL.git```
+```
+https://github.com/laumd23/venta-arte-DohleL.git
+```

@@ -21,7 +21,10 @@ Realizo un ecommerce de venta de arte. Será una página donde el autor de dibuj
   `npm install firebase`
 
 ## Trabajo realizado
+
 He dividido el contenido del proyecto en componentes para que luego sea mas sencilla la reutilización del código y mejor reorganización.
 He intentado cumplir con cada paso indicado logrando así una app completa, organizada y sencilla.
-He trabajado desde VSC. Para levantar la aplicación y trabajar en ella he hecho un `npm install`en la carpeta del proyecto, y a posterori un `npm start`.
+He trabajado desde VSC. Para levantar la aplicación y trabajar en ella he hecho un `npm install` en la carpeta del proyecto, y a posterori un `npm start`.
+Fui subiendo el proyecto a un repositorio de github, trabajando en branches para un mayor orden y control de lo realizado.
 
+```https://github.com/laumd23/venta-arte-DohleL.git```

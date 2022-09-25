@@ -1,10 +1,27 @@
-# E-commerce venta
-Realizo un ecommerce de venta de arte. Será una página donde el autor de los dibujos y pinturas podrá vender sus trabajos realizados. La idea es que el usuario pueda ingresar y visualizar los trabajos por las dos categorias, podrá visualizar todos los  trabajos juntos y luego podrá verlos en las dos secciones realizadas.
+# Ecommerce venta arte
 
-# Librerias utilizadas
-React, react-icons, react-router-dom
+![](https://res.cloudinary.com/lauradohle/image/upload/v1663157938/img-reaperArt/mini-logo_kztvei.png)
 
-# Trabajo realizado hasta ahora
-He dividido el contenido de proyecto en componentes para que luego sea mas sencilla la reutilización del código y mejor reorganización.
-Con respecto al código, he seguido las indicaciones del profesor realizando las promesas para que me de la información de cada item, utilizando asi los diferentes hooks que ofrece React para la configuración y la ejecución de las diferentes tareas. También utilicé metodos como filter y find para solicitiar que el DOM me muestre el array o el objeto dependiendo del componente.
+![](https://res.cloudinary.com/lauradohle/image/upload/v1663252805/img-reaperArt/mini-nombre_p2z549.png)
+
+Realizo un ecommerce de venta de arte. Será una página donde el autor de dibujos y pinturas podrá vender sus trabajos realizados. La idea es que el usuario pueda ingresar y visualizar los trabajos por categorias, podrá visualizar todos los  trabajos juntos y luego podrá verlos en las diferentes secciones realizadas.
+
+## Librerias utilizadas
+
+- [React Icons](https://react-icons.github.io/react-icons/):  Librería utilizada para utilizar el icono de carrito.
+
+  `npm install react-icons`
+
+- [React Router Dom](https://reactrouter.com/en/main): Librería utilizada para manejar las rutas de nuestra aplicación.
+
+  `npm install react-router-dom`
+
+- [Firebase](https://firebase.google.com/): Librería utilizada para la realización del mock de productos y almacenar las ordenes de compra. 
+
+  `npm install firebase`
+
+## Trabajo realizado
+He dividido el contenido del proyecto en componentes para que luego sea mas sencilla la reutilización del código y mejor reorganización.
+He intentado cumplir con cada paso indicado logrando así una app completa, organizada y sencilla.
+He trabajado desde VSC. Para levantar la aplicación y trabajar en ella he hecho un `npm install`en la carpeta del proyecto, y a posterori un `npm start`.
 

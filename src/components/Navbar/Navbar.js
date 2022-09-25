@@ -38,7 +38,8 @@ const Navbar = (props) => {
         <div className={style.logo}>
           <Link to="/" className={style.reaper}>Reaper Crew Art
             <br></br>
-            <img src="https://res.cloudinary.com/lauradohle/image/upload/v1663252805/img-reaperArt/mini-nombre_p2z549.png" alt="Nombre del artista" /></Link>
+            <img src="https://res.cloudinary.com/lauradohle/image/upload/v1663252805/img-reaperArt/mini-nombre_p2z549.png" alt="Nombre del artista" />
+          </Link>
         </div>
         <ul>
           <Link to="/">Home</Link>

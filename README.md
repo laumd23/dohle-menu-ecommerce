@@ -30,5 +30,10 @@ Fui subiendo el proyecto a un repositorio de github, trabajando en branches para
 ```
 https://github.com/laumd23/venta-arte-DohleL.git
 ```
+
 Para finalizar coloqué variables de entorno en `firebaseconfig.js`, para una mayor seguridad del proyecto.
+
+Por último, se sube la aplicación a Vercel.
+
+
 

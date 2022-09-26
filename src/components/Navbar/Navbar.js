@@ -44,7 +44,7 @@ const Navbar = (props) => {
         <ul>
           <Link to="/">Home</Link>
           <a href="https://www.instagram.com/marianobaez.art/?hl=es">Instagram</a>
-          <Link to="/contact">Contacto</Link>
+          <a href="https://www.facebook.com/Mariano.A.Baez">Facebook</a>
         </ul>
       </nav>
     )

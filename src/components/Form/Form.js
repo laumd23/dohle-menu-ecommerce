@@ -15,7 +15,7 @@ const Form = ({ cart, total, clearCart, handleId }) => {
     event.preventDefault();
     if (email === emailRepeat) {
       const order = {
-        buyer: { nombre, movil, email, adress },
+        buyer: { nombre: nombre, movil: movil, email: email, direccion: adress },
         items: cart,
         total: total,
         date: serverTimestamp()

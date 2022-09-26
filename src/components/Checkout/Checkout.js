@@ -15,7 +15,7 @@ const Checkout = () => {
 
   if (idBuy) {
     return (
-      <div className={style.empty}>
+      <div className={style.emptyCart}>
         <img src="https://res.cloudinary.com/lauradohle/image/upload/v1663157938/img-reaperArt/mini-logo_kztvei.png" alt="Logo Reaper Crew" />
         <h2>Gracias por su compra!!! Su número de transacción es ${idBuy}</h2>
       </div>
